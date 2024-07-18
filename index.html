@@ -1,19 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chris O'Shea | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio Web Design</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css">
+	<script src="./scripts.js"></script>
+	<link rel="icon" type="image/jpg" href="./imgs/webicon.jpg">
 </head>
 <body>
-    <h1>Chris O'Shea | Portfolio</h1>
-    
-    <!-- Your content goes here -->
-    
-    <script src="scripts.js"></script>
+	<header>
+		<!-- <div class="logo">L</div> -->
+		<div class="logo-text">Chris O'Shea | Portfolio</div>
+		<nav>
+			<ul id="menu">
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#skills">Skills</a>
+				</li>
+				<li>
+					<a href="#projects">Projects</a>
+				</li>
+				<li>
+					<a href="mailto:osh1996@gmail.com" class="button">Contact Me</a>
+				</li>
+			</ul>
+			<a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+				<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+					<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+				</svg>
+			</a>
+		</nav>
+	</header>
+	<main>
+		<section class="hero container">
+			<div class="hero-blue">
+				<div>
+					<h1><small>Hi I'm</small>
+						Chris O'Shea
+					</h1>
+					<p>
+						Robotics Engineer experienced with consumer products in Boston looking for a new opportunity. I'm interested in topics like autonomous navigation, machine learning and AI. <span>Specialize in delivering high quality consumer robots from design to manufacture and system level root cause analysis.
+						</span>
+					</p>
+					<div class="call-to-action">
+						<a href="./Sample_Resume_Template.pdf" class="button black">
+							View Resume
+						</a>
+						<a href="mailto:osh1996@gmail.com" class="button white">
+							Contact Me
+						</a>
+					</div>
+					<div class="social-links">
+						<a href="https://github.com/osh1996">
+							<img src="./imgs/github.png" alt="GitHub" width="48" />
+						</a>
+						<a href="https://www.linkedin.com/in/coshea47/">
+							<img src="./imgs/linkedin.png" alt="LinkedIn" width="48" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="hero-yellow">
+				<img src="./imgs/hero-image.png" alt="Chris O'Shea" width="100%" />
+			</div>
+		</section>
+		<section class="logos container">
+			<div class="marquee">
+				<div class="track">
+					<img src="./imgs/html.png" alt="HTML" width="128" />
+					<img src="./imgs/css.png" alt="CSS" width="128" />
+					<img src="./imgs/javascript.png" alt="JS" width="128" />
+					<img src="./imgs/vscode.png" width="128" alt="VS Code" />
+					<img src="./imgs/python.png" width="128" alt="Python" />
+					<img src="./imgs/c++.png" width="128" alt="C++" />
+					<img src="./imgs/arduino.png" width="128" alt="Arduino" />
+					<img src="./imgs/linux.png" width="128" alt="Linux" />
+					<img src="./imgs/solidworks.png" width="128" alt="SolidWorks" />
+					<img src="./imgs/atlassian.png" width="128" alt="Atlassian" />
+					<img src="./imgs/agile.png" width="128" alt="Agile" />
+				</div>
+			</div>
+		</section>
+		<section id="skills" class="skills container">
+			<h2>
+				<small>About Me</small>
+				Skills
+			</h2>
+			<div class="holder-blue">
+				<div class="left-column">
+					<h3>General</h3>
+					<ul>
+						<li>System-Level Root Cause Analysis</li>
+						<li>Algorithms</li>
+						<li>Rapid Prototyping</li>
+						<li>Agile</li>
+						<li>Consumer Goods</li>
+						<li>Systems Analysis</li>
+						<li>Laser Cutting</li>
+						<li>Software Documentation</li>
+					</ul>
+					<h3>Programming Languages</h3>
+					<ul>
+						<li>C/C++</li>
+						<li>Python</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Bash</li>
+					</ul>
+					<h3>Electronics</h3>
+					<ul>
+						<li>Soldering</li>
+						<li>Failure Analysis</li>
+						<li>Arduino</li>
+						<li>Embedded Programming</li>
+						<li>Signals Processing</li>
+						<li>Sensor Design</li>
+					</ul>
+					<h3>Softwares</h3>
+					<ul>
+						<li>Linux</li>
+						<li>Git</li>
+						<li>ROS</li>
+						<li>Solidworks</li>
+						<li>Jira/Confluence</li>
+						<li>Cura</li>
+						<li>Bambu Studio</li>
+						<li>MATLAB</li>
+						<li>Microsoft Office</li>
+					</ul>
+					<h3>Mechanical</h3>
+					<ul>
+						<li>3-D Printing</li>
+						<li>CAD</li>
+						<li>Kinematics</li>
+						<li>Controls</li>
+					</ul>
+				</div>
+				<div class="right-column">
+					<h3>A bit about me</h3>
+					<p>
+						Hi I'm Adrian Twarog, a designer and developer who creates educational content on YouTube to teach others about HTML, CSS and JavaScript.  I'm interested in AI topics which is why I also add things like ChatGPT into my projects these days!
+					</p>
+					<p>
+						I'm currently working on a project that uses Azure AI to create a chatbot that can help answer questions about web development.  I'm also working on a project that uses React and Next.js to create a portfolio website design that looks good.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="work-experience container">
+			<h2>
+				Work Experience
+			</h2>
+			<div class="jobs">
+				<article>
+					<figure>
+						<div>
+							<img src="./imgs/workplace-1.jpg" alt="SharkNinja" width="100%" />
+							<figcaption>
+								SharkNinja - Senior Mechantronics Engineer
+							</figcaption>
+						</div>
+					</figure>
+					<h3>SharkNinja - Senior Mechantronics Engineer</h3>
+					<div>2019-2022</div>
+					<p>Lead engineer on robot navigation, helping take multiple robot vacuum cleaner models from prototyping to mass production.</p>
+				</article>
+				<article>
+					<figure>
+						<div>
+							<img src="./imgs/workplace-2.jpg" alt="SharkNinja - Product Developer, Robotic Systems" width="100%" />
+							<figcaption>
+								SharkNinja - Product Developer, Robotic Systems
+							</figcaption>
+						</div>
+					</figure>
+					<h3>SharkNinja - Product Developer, Robotic Systems</h3>
+					<div>2019-2019</div>
+					<p>Worked with Quality Assurance, Software Development and Engineering Teams to bring our first camera based navigation robot vacuum. Managed test cycles to evaluate new prototypes and their impact on key performance indices for the robot. </p>
+				</article>
+				<article>
+					<figure>
+						<div>
+							<img src="./imgs/workplace-3.jpg" alt="Workplace 3 - Chamber of Commerce" width="100%" />
+							<figcaption>
+								Workplace - Chamber of Commerce
+							</figcaption>
+						</div>
+					</figure>
+					<h3>Chamber of Commerce</h3>
+					<div>2013-2018</div>
+					<p>A small to large business organisation that helps facilitate advice and support.</p>
+				</article>
+				
+			</div>
+		</section>
+		<section id="projects" class="bento container">
+			<h2>
+				Completed Projects
+			</h2>
+			<div class="bento-grid">
+				<a href="360.html" class="bento-item">
+					<img src="./imgs/bento-1.jpg" alt="BGCCI" width="100%" />
+				</a>
+				<a href="northeastern.html" class="bento-item">
+					<img src="./imgs/bento-2.jpg" alt="Churhview" width="100%" />
+				</a>
+				<a href="mira.html" class="bento-item">
+					<img src="./imgs/bento-3.jpg" alt="Harley" width="100%" />
+				</a>
+				<a href="brigham.html" class="bento-item">
+					<img src="./imgs/bento-5.jpg" alt="Bunbury" width="100%" />
+				</a>
+				<a href="printing.html" class="bento-item">
+					<img src="./imgs/bento-6.jpg" alt="Running" width="100%" />
+				</a>
+				<a href="computer.html" class="bento-item">
+					<img src="./imgs/bento-7.jpg" alt="School" width="100%" />
+				</a>
+			</div>
+		</section>
+		<section class="chatbot container">
+			<h2>
+				<small>
+					Talk to me
+				</small>
+				Chatbot
+			</h2>
+			<div class="chatbot-blue">
+				<div class="chat-info">
+					<h3>Azure AI Chatbot</h3>
+					<p>I've put together a chatbot here which knows all my skills, work experience and has a copy of my CV/Resume. You can use it to ask questions about me to get a better idea of who I am and what I've done.</p>
+					<p>You can also download my resume here if you want to take a look at it.  I'm currently looking for new opportunities so if you have a project you think I'd be a good fit for, please get in touch!</p>
+					<a href="./Sample_Resume_Template.pdf" class="button black">Download Resume</a>
+				</div>
+				<div class="chat-box">
+					<div class="scroll-area">
+						<ul id="chat-log">
+							<li>
+								<span class="avatar bot">AI</span>
+								<div class="message">
+									Hi, I'm a friendly chatbot that lets you interactive with this portfolio and CV. How can I help?
+								</div>
+							</li>
+							<li>
+								<span class="avatar user">User</span>
+								<div class="message">
+									I have a question to ask you about this resume
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="chat-message">
+						<input type="text" placeholder="Hey Adrian, what skills are you best at?">
+						<button class="button black">Send</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 </body>
 </html>
+
+
+
+
