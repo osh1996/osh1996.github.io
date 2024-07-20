@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css">
+	<script src="./scripts.js"></script>
+	<link rel="icon" type="image/jpg" href="./imgs/webicon.jpg">
+</head>
+<body>
+	<header>
+		<!-- <div class="logo">L</div> -->
+		<div class="logo-text">Chris O'Shea | Portfolio</div>
+		<nav>
+			<ul id="menu">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="index.html#skills">Skills</a>
+				</li>
+				<li>
+					<a href="#projects">Projects</a>
+				</li>
+				<li>
+					<a href="mailto:osh1996@gmail.com" class="button">Contact Me</a>
+				</li>
+			</ul>
+			<a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+				<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+					<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+				</svg>
+			</a>
+		</nav>
+	</header>
+	<main>
+        <section>
+            <div class="container">
+                <section>
+                    <h2>Robotic Arm Learning Platform (WPI Capstone Project)</h2>
+                  
+                    <h3>Objective:</h3>
+                    <p>Design and develop an educational platform to facilitate learning about robotic arm kinematics, control systems, and programming.</p>
+                  
+                    <h3>My Role:</h3>
+                    <p>Lead Engineer (Hardware & Software)</p>
+                  
+                    <h3>Project Highlights:</h3>
+                    <ul>
+                      <li><strong>Modular Control Board Design:</strong> Designed interconnected modular control boards for each robotic arm link.</li>
+                      <li><strong>CAN Bus Communication:</strong> Implemented a CAN bus communication protocol to enable communication between the central computer and individual link controllers.</li>
+                      <li><strong>3D Printed Parts:</strong> Designed all robotic arm components for fabrication within the WPI 3D printer lab, ensuring accessibility and cost-effectiveness.</li>
+                      <li><strong>Real-Time Interactive GUI:</strong> Developed a user-friendly graphical user interface (GUI) for real-time control of each robotic arm joint.</li>
+                      <li><strong>Automatic Kinematics Calculations:</strong> Implemented software routines for automatic forward and inverse kinematic calculations, allowing users to visualize and control the arm's movement based on desired joint positions.</li>
+                      <li><strong>Live Demonstration:</strong> Successfully presented the complete robotic arm learning platform with a live demonstration to peers and professors at WPI.</li>
+                    </ul>
+                  
+                    <h3>Technical Skills Developed:</h3>
+                    <ul>
+                      <li>Hardware Design</li>
+                      <li>Embedded Systems Programming</li>
+                      <li>CAN Bus Communication Protocols</li>
+                      <li>User Interface Design</li>
+                      <li>Kinematics (Forward & Inverse)</li>
+                      <li>Real-Time Control Systems</li>
+                    </ul>
+                  
+                    <h3>Project Impact:</h3>
+                    <p>This project provided a valuable educational tool for students to explore robotic arm principles. The modular design allows for future expansion with new link configurations, promoting continued learning and exploration.</p>
+                
+                <img src="./imgs/3d-printer.jpg" alt="3D Printer">
+            </div>
+        </section>
+	</main>
+</body>
+</html>
