@@ -365,6 +365,7 @@ h3 {
 					height:100%;
 					object-fit:cover;
 					transition: ease 3s all;
+					/* border: 5px solid #555; */
 				}
 				figcaption {
 					position:absolute;
@@ -424,6 +425,8 @@ h3 {
 				height:100%;
 				object-fit:cover;
 				transition: ease 3s all;
+				border: 3px solid #555;
+				border-radius: 15px;
 			}
 			&:hover {
 				img {
