@@ -38,39 +38,95 @@
 		</nav>
 	</header>
 	<main>
-        <section>
-            <div class="container">
-                <h2>Northeastern Graduate School: GPS Project (Mobile Robotics)</h2>
-                <h3>Project Focus: Sensor Fusion for Enhanced Navigation</h3>
-
-                <h4>Teamwork and Learning Objectives:</h4>
-                <ul>
-                    <li>Collaborated with a team to evaluate various mobile robot navigation sensors (pros & cons).</li>
-                    <li>Gained expertise in writing low-level driver code for embedded sensors.</li>
-                    <li>Integrated sensor data with Robot Operating System (ROS) for streamlined robotics control.</li>
-                    <li>Explored sensor fusion techniques to improve robot perception and navigation accuracy.</li>
-                </ul>
-
-                <h4>Project Activities:</h4>
-                <ul>
-                    <li>Integrated diverse sensor types: satellite communication devices, inertial measurement units (IMUs), and additional sensors.</li>
-                    <li>Combined strengths of three sensor types to achieve the most accurate GPS location estimation.</li>
-                    <li>Conducted real-world data collection by attaching sensors to a car and recording sensor fusion data streams.</li>
-                </ul>
-
-                <h4>Project Outcome:</h4>
-                <p>Successfully generated a GPS map of the car's driven route with an accuracy of within a few feet, demonstrating the effectiveness of sensor fusion.</p>
-
-                <h4>Key Skills Developed:</h4>
-                <ul>
-                    <li>Sensor Evaluation and Selection</li>
-                    <li>Low-Level Driver Code Development</li>
-                    <li>ROS Integration</li>
-                    <li>Sensor Fusion Techniques</li>
-                    <li>Real-World Data Collection and Analysis</li>
-                </ul>
-
-                <p>This project showcases the ability to work effectively in a team, apply theoretical knowledge to real-world scenarios, and contribute to the development of robust navigation systems for mobile robots.</p>
+        <section class="projects container">
+            <div>
+                    <h2>Project: Human-Arm-Controlled Robotic Arm for Precise Work in Hazardous Environments</h2>
+                  
+                    <section class="projects container">
+                      <h3>Project Overview</h3>
+                      <p>
+                        This project aimed to create a robotic arm that seamlessly mirrors the movements of a human arm. By attaching sensors to the user's arm, we capture real-time pose data of the bicep and forearm. This information is then transmitted wirelessly to the robot arm's embedded controller, enabling it to replicate the human arm's movements with high precision. The primary focus of this project was developing Linux drivers compatible with ROS for each sensor, and integrating them into an intuitive control system for a robotic arm. This system has potential applications in hazardous environments where human operators can safely control the robot arm from a distance.
+                      </p>
+                    </section>
+                  
+                    <section class="projects container">
+                      <h3>Project Goals</h3>
+                      <ul>
+                        <li>
+                          <strong>Real-time Movement Mirroring:</strong> Develop a system that accurately and responsively translates human arm movements to the robotic arm.
+                        </li>
+                        <li>
+                          <strong>Intuitive Control System:</strong> Design a user-friendly control interface for operating the robotic arm.
+                        </li>
+                        <li>
+                          <strong>Linux Driver Development:</strong> Create Linux drivers compatible with ROS for seamless integration with the IMU sensors.
+                        </li>
+                        <li>
+                          <strong>Hazardous Environment Application:</strong> Target potential use cases where the robotic arm can perform tasks in environments that are dangerous for humans.
+                        </li>
+                      </ul>
+                    </section>
+                  
+                    <section class="projects container">
+                      <h3>Technical Approach</h3>
+                      <ul>
+                        <li>
+                          <strong>Sensors:</strong> IMU (Inertial Measurement Unit) sensors are used to track the pose (position and orientation) of the bicep and forearm.
+                        </li>
+                        <li>
+                          <strong>Wireless Communication:</strong> The sensor data is transmitted wirelessly to the robot arm's embedded controller using a reliable communication protocol.
+                        </li>
+                        <li>
+                          <strong>Embedded Controller:</strong> The embedded controller processes the sensor data, calculates the required joint angles for the robot arm, and sends commands to the stepper motors.
+                        </li>
+                        <li>
+                          <strong>Stepper Motors:</strong> The stepper motors control the individual joints of the robot arm, allowing for precise movement and positioning.
+                        </li>
+                        <li>
+                          <strong>Linux Drivers and ROS Integration:</strong> Linux drivers for the IMU sensors are developed, and integration with ROS (Robot Operating System) is implemented to facilitate communication and control.
+                        </li>
+                      </ul>
+                    </section>
+                  
+                    <section class="projects container">
+                      <h3>Project Outcomes</h3>
+                      <ul>
+                        <li>
+                          <strong>Functional Robotic Arm:</strong> A successful implementation of a robotic arm that accurately mirrors human arm movements in real time.
+                        </li>
+                        <li>
+                          <strong>User-Friendly Control System:</strong> Development of an intuitive control interface for operating the robotic arm.
+                        </li>
+                        <li>
+                          <strong>ROS-Compatible Linux Drivers:</strong> Creation of Linux drivers for IMU sensors that seamlessly integrate with ROS.
+                        </li>
+                        <li>
+                          <strong>Potential for Hazardous Environment Use:</strong> Demonstration of the robotic arm's potential for performing tasks in hazardous environments.
+                        </li>
+                      </ul>
+                    </section>
+                  
+                    <section class="projects container">
+                      <h3>Future Work</h3>
+                      <ul>
+                        <li>
+                          <strong>Enhanced Sensor Fusion:</strong> Explore the use of additional sensors (e.g., deflection sensors) for more accurate and comprehensive pose estimation.
+                        </li>
+                        <li>
+                          <strong>Force Feedback:</strong> Incorporate force feedback mechanisms to provide the operator with tactile information from the robot arm.
+                        </li>
+                        <li>
+                          <strong>Machine Learning:</strong> Investigate the use of machine learning techniques for improved movement prediction and control.
+                        </li>
+                        <li>
+                          <strong>Real-World Testing:</strong> Conduct extensive testing in simulated and real-world hazardous environments to evaluate the system's performance and reliability.
+                        </li>
+                      </ul>
+                      <p>
+                        By focusing on precise movement mirroring, intuitive control, and Linux/ROS integration, this project aims to contribute to the development of robotic systems capable of performing delicate tasks in environments that are unsafe for humans.
+                      </p>
+                    </section>
+                  
                 <img src="./imgs/3d-printer.jpg" alt="3D Printer">
             </div>
         </section>
