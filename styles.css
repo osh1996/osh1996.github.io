@@ -1,3 +1,13 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
 *, *::before, *::after {
 	box-sizing: border-box;
 	margin:0;
@@ -294,6 +304,14 @@ h3 {
 	color: var(--base-800);
 }
 
+h4 {
+	font-size:24px;
+	font-weight:600;
+	line-height:1;
+	margin-bottom:10px;
+	color: var(--base-800);
+}
+
 .skills {
 	.holder-blue {
 		background-color: var(--blue-100);
@@ -581,6 +599,134 @@ h3 {
 					cursor:pointer;
 				}
 			}
+		}
+	}
+}
+
+/* .project {
+		display: flex;
+		flex-direction: vertical;
+		text-align: center;
+		padding: 40px;
+		margin: auto;
+		background-color: lightgrey;
+		h2 {
+			text-align: center;
+			background-color: darkgrey;
+			margin: auto;
+			padding: 10px;
+			border-radius: 20px;
+		}
+		h3 {
+			text-align: center;
+			background-color: lightcoral;
+			margin-right: 30%;
+			margin-left: 30%;
+			padding: 10px;
+			border-radius: 10px;
+		}
+		ul {
+			justify-content: left;
+			margin: auto;
+		}
+		p {
+			text-align: center;
+			margin-left: 10%;
+			margin-right: 10%;
+			justify-content: center;
+		}
+		ul {
+			display: flex;
+			justify-content: left;
+			gap: 10px;
+			margin-bottom: 20px;
+			li {
+				display: block;
+				background-color: var(--blue-400);
+				padding: 10px 20px;
+				border-radius: 15px;
+				margin-bottom: 10px;
+		}
+	} 
+} */
+
+.projects {
+	display: flex; /* FlexBox */
+	flex-direction: column; /* Flex vertically */
+	justify-content: space-evenly; /* Orgnaizing on the main axis */
+	align-items: center; /* Orgnaizing on the cross axis */
+	/* flex-wrap: wrap; Allow spillage into next line */
+	/* align-content: flex-start;  Aligns along the cross axis */
+	gap: 20px; /* Space between items */
+	background-color: lightgrey;
+	border-radius: 15px;
+	padding: 20px;
+
+	h2 { /* Title Header */
+		text-align: center;
+		background-color: darkgrey;
+		margin: auto;
+		padding: 10px;
+		border-radius: 20px;
+	}
+
+	h3 { /* Subtitle Header	*/
+		text-align: center;
+		background-color: lightcoral;
+		margin: auto;
+		padding: 10px;
+		border-radius: 10px;
+	
+	}
+
+	p { /* Paragraph */
+		text-align: center;
+		margin-left: 10%;
+		margin-right: 10%;
+		justify-content: center;
+		background-color: var(--blue-400);
+		border-radius: 15px;
+		padding: 10px;
+		flex-grow: 1; /* Grow to fill space */
+	}
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: left;
+		gap: 10px;
+		margin-bottom: 20px;
+		background-color: var(--blue-400);
+		border-radius: 15px;
+		li {
+			display: block;
+			padding: 10px 20px;
+			margin-bottom: 10px;
+		}
+	
+	}
+	.photo {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: darkgrey;
+		border-radius: 15px;
+		padding: 10px;
+		margin: 10px;
+		img {
+			width: 100%;
+			height: auto;
+			border-radius: 15px;
+		}
+		p {
+			text-align: center;
+			margin-left: 10%;
+			margin-right: 10%;
+			justify-content: center;
+			border-radius: 15px;
+			padding: 10px;
+			flex-grow: 1; /* Grow to fill space */
 		}
 	}
 }
