@@ -607,14 +607,15 @@ h4 {
 	justify-content: space-evenly; /* Organizing on the main axis */
 	align-items: center; /* Organizing on the cross axis */
 	gap: 20px; /* Space between items */
-	background-color: teal;
+	/*background-color: #BDBDBD;*/
+	background-color: darkgrey;
 	border-radius: 15px;
 	padding: 20px;
 	width: 95%;
 
 	h2 { /* Title Header */
 		text-align: center;
-		background-color: gold;
+		background-color: orange;
 		margin-right: 10%;
 		margin-left: 10%;
 		padding: 10px;
@@ -623,7 +624,7 @@ h4 {
 
 	h3 { /* Subtitle Header	*/
 		text-align: left;
-		background-color: yellow;
+		background-color: orange;
 		margin: auto;
 		padding: 10px;
 		border-radius: 15px;
@@ -631,7 +632,7 @@ h4 {
 
 	h4 {
 		text-align: center;
-		background-color: yellow;
+		background-color: orange;
 		margin: auto;
 		padding: 10px;
 		border-radius: 15px;
@@ -640,7 +641,7 @@ h4 {
 	p { /* Paragraph */
 		text-align: center;
 		width: 90%;
-		background-color: orange;
+		background-color: teal;
 		border-radius: 15px;
 		padding: 10px;
 		flex-grow: 1; /* Grow to fill space */
@@ -650,36 +651,40 @@ h4 {
 		display: flex;
 		flex-direction: column;
 		justify-content: left;
-		background-color: orange;
+		background-color: teal;
 		border-radius: 15px;
 		width: 90%;
 
 		li {
-			margin-left: 3%;
+			margin-left: 5%;
 			margin-bottom: 5px;
+			margin-right: 20px;
 		}
 	}
 
 	a {
-		background-color: gold;
+		background-color: teal;
 		border-radius: 15px;
 		padding: 10px;
 	}
 
-	.video, .photo {
+	.video {
 		display: flex;
 		width: 1080px;
 		height: 720px;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		background-color: gold;
+		background-color: teal;
 		border-radius: 15px;
 		padding: 10px;
 		img {
-			width: 100%;
+			max-width: 100%;
 			height: auto;
 			border-radius: 15px;
+			align-items: center;
+			justify-content: center;
+			margin: auto;
 		}
 		p {
 			text-align: center;
@@ -689,6 +694,50 @@ h4 {
 			border-radius: 15px;
 			padding: 10px;
 			flex-grow: 1; /* Grow to fill space */
+		}
+	}
+
+	.vertphoto {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: teal;
+		border-radius: 15px;
+		/*padding: 10px;*/
+		width: 75%;
+		height: auto;
+		padding-top: 10px;
+
+		div {
+			max-width: 500px; /* Adjust to your desired width */
+			margin: 5px; /* Center on the page */
+
+			.description {
+				text-align: center;
+				font-size: 1em; /* Adjust subtitle font size */
+				color: #333; /* Subtitle text color */
+				padding: 10px;
+			}
+		}
+	}
+
+	.horizphoto {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: teal;
+		border-radius: 15px;
+		width: 75%;
+		height: auto;
+		padding-top: 10px;
+
+		.description {
+			text-align: center;
+			font-size: 1em; /* Adjust subtitle font size */
+			color: #333; /* Subtitle text color */
+			padding: 10px;
 		}
 	}
 }
