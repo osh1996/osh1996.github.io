@@ -612,6 +612,8 @@ h4 {
 	border-radius: 15px;
 	padding: 20px;
 	width: 95%;
+	border: #333333 solid 10px;
+	/*border-width: thick;*/
 
 	h2 { /* Title Header */
 		text-align: center;
@@ -620,6 +622,7 @@ h4 {
 		margin-left: 10%;
 		padding: 10px;
 		border-radius: 15px;
+		border: #333333 solid 5px;
 	}
 
 	h3 { /* Subtitle Header	*/
@@ -628,6 +631,7 @@ h4 {
 		margin: auto;
 		padding: 10px;
 		border-radius: 15px;
+		border: #333333 solid 3px;
 	}
 
 	h4 {
@@ -636,6 +640,7 @@ h4 {
 		margin: auto;
 		padding: 10px;
 		border-radius: 15px;
+		border: #333333 solid 3px;
 	}
 
 	p { /* Paragraph */
@@ -663,7 +668,7 @@ h4 {
 	}
 
 	a {
-		background-color: teal;
+		background-color: white;
 		border-radius: 15px;
 		padding: 10px;
 	}
@@ -700,14 +705,13 @@ h4 {
 	.vertphoto {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		justify-self: center;
+		align-self: center;
 		background-color: teal;
 		border-radius: 15px;
-		/*padding: 10px;*/
-		width: 75%;
-		height: auto;
-		padding-top: 10px;
+		width: auto;
+		max-height: 512px;
+
 
 		div {
 			max-width: 500px; /* Adjust to your desired width */
@@ -729,9 +733,8 @@ h4 {
 		align-items: center;
 		background-color: teal;
 		border-radius: 15px;
-		width: 75%;
+		width: 90%;
 		height: auto;
-		padding-top: 10px;
 
 		.description {
 			text-align: center;
@@ -739,5 +742,34 @@ h4 {
 			color: #333; /* Subtitle text color */
 			padding: 10px;
 		}
+	}
+}
+
+.combined-grid {
+	display:grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	width: 90%;
+	padding: 10px;
+
+	.combined-item-p {
+		background-color: var(--base-100);
+		border-radius: 15px;
+		/*position: relative;*/
+		/*overflow: hidden;*/
+		text-align: center;
+		height: fit-content;
+		align-self: center;
+	}
+
+	.combined-item-img {
+		background-color: var(--base-100);
+		border-radius: 15px;
+		height: 256px;
+		justify-self: center;
+		border: 3px solid #555;
+
+
 	}
 }
